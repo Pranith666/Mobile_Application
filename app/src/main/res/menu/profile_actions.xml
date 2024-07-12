@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/create_newprofil"
+        android:title="profil_create_new"
+        />
+    <item
+        android:id="@+id/change_profil"
+        android:title="profil_change"
+        />
+    <item
+        android:id="@+id/rename_profil"
+        android:title="renameProfilTitle" />
+    <item
+        android:id="@+id/delete_profil"
+        android:title="profil_delete" />
+    <item
+        android:id="@+id/param_profil"
+        android:title="profile_page" />
+
+</menu>

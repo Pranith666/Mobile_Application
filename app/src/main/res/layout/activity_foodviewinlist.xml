@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip">
+
+    <TextView
+        android:id="@+id/LIST_MACHINE_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/LIST_MACHINE_PHOTO"
+        android:layout_width="46dp"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dip"
+        android:layout_marginBottom="4dp"
+        android:background="#DFF7FF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/baseline_restaurant_black_24dp" />
+
+
+    <TextView
+        android:id="@+id/LIST_MACHINE_SHORT_DESCRIPTION"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+
+        android:layout_toEndOf="@id/LIST_MACHINE_PHOTO"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="description"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/LIST_MACHINE_NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_above="@id/LIST_MACHINE_SHORT_DESCRIPTION"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_toEndOf="@id/LIST_MACHINE_PHOTO"
+        android:gravity="center_vertical"
+        android:text="Example application"
+        android:textSize="16sp" />
+
+</RelativeLayout>
